@@ -8,10 +8,4 @@ Room.prototype.paint = function () {
 };
 
 
-
-
-
-
-
-
 module.exports = Room;
