@@ -14,4 +14,25 @@ Decorator.prototype.totalPaint = function () {
   return count;
 };
 
+Decorator.prototype.enoughPaint = function (room) {
+  if (room.area <= this.totalPaint()) {
+    return true;
+  } else {
+    return false;
+  };
+};
+
+// Decorator.prototype.paintRoom = function (room) {
+//   console.log("room:", room);
+//   console.log("room.painted:", room2.painted);
+//   console.log("room.painted:", room.painted);
+//   if (this.enoughPaint(room) = true) {
+//     room.painted = true;
+//     // and remove the paint
+//   } else {
+//     room.painted = false;
+//   };
+//   console.log("room.painted: after", room2.painted);
+// };
+
 module.exports = Decorator;
