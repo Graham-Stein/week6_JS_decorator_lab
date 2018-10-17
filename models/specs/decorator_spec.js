@@ -44,12 +44,12 @@ describe("Decorator", function () {
     assert.strictEqual(decorator.enoughPaint(room1), false );
   });
 
-  // it("Can paint room if enough paint:", function () {
-  //   decorator.addPaint(paint1);
-  //   decorator.addPaint(paint2);
-  //   decorator.paintRoom(room2);
-  //   console.log("room.painted:", room2.painted);
-  //   assert.strictEqual(room2.painted, true);
-  // });
+  it("Can paint room if enough paint:", function () {
+    decorator.addPaint(paint1);
+    decorator.addPaint(paint2);
+    decorator.paintRoom(room2);
+    // console.log("room.painted:", room2.painted);
+    assert.strictEqual(room2.painted, true);
+  });
 
 });
